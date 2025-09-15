@@ -34,6 +34,9 @@ function Sidebar() {
     window.open("https://www.linkedin.com/in/srinidhi-shankarjain/", "_blank");
   };
 
+const openInstagram = () => {
+    window.open("https://www.instagram.com/suchithshetty_", "_blank");
+  };
 
 
   const openGmail = () => {
