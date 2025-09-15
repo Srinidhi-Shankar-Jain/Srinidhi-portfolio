@@ -6,7 +6,6 @@ import { IoMdDownload } from "react-icons/io";
 import { BiSolidContact } from "react-icons/bi";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
 import { BiLogoGmail } from "react-icons/bi";
 import "/src/App.css";
 import { Button } from "react-scroll";
@@ -31,12 +30,10 @@ function Sidebar() {
   };
 
   const openLinkedIn = () => {
-    window.open("https://www.linkedin.com/in/srinidhi-shankarjain/", "_blank");
-  };
+  window.open("https://www.linkedin.com/in/srinidhi-shankarjain/", "_blank");
+};
 
-const openInstagram = () => {
-    window.open("https://www.instagram.com/suchithshetty_", "_blank");
-  };
+
 
 
   const openGmail = () => {
@@ -164,15 +161,7 @@ const openInstagram = () => {
                   openGithub();
                 }
               }}
-            />
-            <BsInstagram
-              tabIndex={0}
-              onClick={openInstagram}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" || event.keyCode === 13) {
-                  openInstagram();
-                }
-              }}
+            
             />
             <BiLogoGmail
               tabIndex={0}
