@@ -21,10 +21,10 @@ function Sidebar() {
   };
 
   const downloadResume = () => {
-    const fileUrl = "/Srinidhi Shankar Jain-CV.pdf";
+    const fileUrl = "/Srinidhi Shankar Jain - CV.pdf";
     const a = document.createElement("a");
     a.href = fileUrl;
-    a.download = "Srinidhi Shankar Jain-CV.pdf";
+    a.download = "Srinidhi Shankar Jain - CV.pdf";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -34,9 +34,7 @@ function Sidebar() {
     window.open("https://www.linkedin.com/in/srinidhi-shankarjain/", "_blank");
   };
 
-  const openInstagram = () => {
-    window.open("https://www.instagram.com/s.r.i.n.i.d.h.i_s", "_blank");
-  };
+
 
   const openGmail = () => {
     const emailAddress = "srinidhi.s131@gmail.com";
