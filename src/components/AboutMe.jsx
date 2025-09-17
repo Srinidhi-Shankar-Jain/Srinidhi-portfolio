@@ -29,7 +29,7 @@ function AboutMe() {
             About Me
           </span>
           <span className="text-xl font-medium text-gray-500 max-sm:text-sm">{`I'm a Mechatronics Engineering Graduate`}</span>
-          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-sm:text-xs max-lg:text-justify">{`Skilled Mechatronics Engineer with hands-on experience in optimizing control systems and integrating embedded systems. Skilled in designing mechanical components and test stations using Fusion 360 and Bambu Studio. Proficient in circuit design and familiar with various communication protocols such as Profibus and Profinet. Experienced in conducting in-depth research on automation systems, safety standards, and sustainability, with a strong focus on enhancing production efficiency. Adept at collaborating in multidisciplinary teams and solving complex technical challenges in fast-paced environments.`}</span>
+          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-sm:text-xs max-lg:text-justify">{`Mechatronics engineer with practical experience in control systems, automation, and embedded technologies. Familiar with web development and currently learning artificial intelligence for industrial applications. Gaining exposure to TwinCAT for automation and interested in bridging mechanical, electrical, and software domains.`}</span>
           <div className="border border-b-gray-300 p-2 border-x-0 border-t-0"></div>
           <div className="flex justify-between">
             <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-sm:text-xs max-lg:gap-2">
