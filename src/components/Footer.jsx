@@ -1,14 +1,9 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BiLogoGmail } from "react-icons/bi";
-import { BsInstagram } from "react-icons/bs";
 
 function Footer() {
   const openLinkedIn = () => {
     window.open("https://www.linkedin.com/in/srinidhi-shankarjain/", "_blank");
-  };
-
-  const openInstagram = () => {
-    window.open("https://www.instagram.com/S.r.i.n.i.d.h.i_s", "_blank");
   };
 
   const openGmail = () => {
@@ -20,6 +15,7 @@ function Footer() {
   const openGithub = () => {
     window.open("https://github.com/Srinidhi-Shankar-Jain", "_blank");
   };
+
   return (
     <div className="mb-5">
       <div className="border border-b-gray-300 p-2 border-x-0 border-t-0"></div>
@@ -41,15 +37,6 @@ function Footer() {
               onKeyDown={(event) => {
                 if (event.key === "Enter" || event.keyCode === 13) {
                   openGithub();
-                }
-              }}
-            />
-            <BsInstagram
-              tabIndex={0}
-              onClick={openInstagram}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" || event.keyCode === 13) {
-                  openInstagram();
                 }
               }}
             />
