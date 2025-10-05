@@ -40,35 +40,7 @@ function Experience() {
               </ul>
             </div>
           </div>
-          <div className="border border-b-gray-300 p-2 my-4 border-x-0 border-t-0 max-lg:p-0"></div>
-          <div className="flex flex-col gap-2 items-center justify-between mt-12 max-lg:mt-4">
-            <div className="flex justify-between w-full font-semibold text-xl max-lg:text-sm max-lg:flex-col">
-              <span>Pro-Spec Performance Parts</span>
-              <span>January 2023 - July 2023</span>
-            </div>
-            <span className="w-full text-blue-700 font-semibold text-base max-lg:text-xs">
-              Senior Operations Engineer
-            </span>
-            <div className="w-full">
-              <ul
-                style={{ listStyleType: "disc" }}
-                className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
-              >
-                <li>
-                  {`Streamlined daily operations by integrating demand forecasting with inventory optimization to minimize lead times and ensure an uninterrupted supply chain, leveraging advanced Excel and ERP systems for data-driven workflows.`}
-                </li>
-                <li>
-                  {`Implemented the integration of Amazon MFN (Merchant Fulfilled Network) and FBA (Fulfilled by Amazon) marketplaces into Zoho Books, automating inventory synchronization, order management, and financial reporting. This ensured real-time stock visibility, seamless order processing, and accurate revenue tracking across multiple sales channels.`}
-                </li>
-                <li>
-                  {`Implemented Just-in-Time (JIT) manufacturing and procurement processes by synchronizing material requirements planning (MRP) with supplier schedules, minimizing inventory holding costs.`}
-                </li>
-                <li>
-                  {`Developed and standardized Product Life Cycle Management (PLM) principles for two distinct product families, ensuring efficient development, tracking, and end-of-life strategies.`}
-                </li>
-              </ul>
-            </div>
-          </div>
+          
         
         </div>
       </div>
