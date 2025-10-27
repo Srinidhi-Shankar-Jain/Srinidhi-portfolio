@@ -4,7 +4,7 @@ import Form from "./Form";
 
 function Contact() {
   const sendEmail = () => {
-    const emailAddress = "srinidhi.s131@gmail.com";
+    const emailAddress = "srinidhi.shankar.jain@outlook.com";
     const mailtoLink = `mailto:${emailAddress}`;
     window.open(mailtoLink, "_blank");
   };
@@ -31,7 +31,7 @@ function Contact() {
             <BiLogoGmail className="text-3xl" />
             <span className="text-xl font-bold text-gray-700">Email</span>
             <div className="text-ellipsis text-base font-normal font-serif text-gray-700">
-              srinidhi.s131@gmail.com
+              srinidhi.shankar.jain@outlook.com
             </div>
           </div>
           <div

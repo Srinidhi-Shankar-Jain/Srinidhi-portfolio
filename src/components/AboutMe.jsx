@@ -10,7 +10,7 @@ function AboutMe() {
   };
 
   const openGmail = () => {
-    const emailAddress = "srinidhi.s131@gmail.com";
+    const emailAddress = "srinidhi.shankar.jain@outlook.com";
     const mailtoLink = `mailto:${emailAddress}`;
     window.open(mailtoLink, "_blank");
   };
@@ -29,7 +29,7 @@ function AboutMe() {
             About Me
           </span>
           <span className="text-xl font-medium text-gray-500 max-sm:text-sm">{`I'm a Mechatronics Engineering Graduate`}</span>
-          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-sm:text-xs max-lg:text-justify">{`Mechatronics engineer with practical experience in control systems, automation, and embedded technologies. Familiar with web development and currently learning artificial intelligence for industrial applications. Gaining exposure to TwinCAT for automation and interested in bridging mechanical, electrical, and software domains.`}</span>
+          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-sm:text-xs max-lg:text-justify">{`Mechatronics engineer with practical experience in control systems and automation. Familiar with PLC programming and passionate about integrating mechanical, electrical, and software systems. Currently learning AI for industrial automation and upskilling in automation programming tools.`}</span>
           <div className="border border-b-gray-300 p-2 border-x-0 border-t-0"></div>
           <div className="flex justify-between">
             <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-sm:text-xs max-lg:gap-2">
@@ -41,7 +41,7 @@ function AboutMe() {
               </div>
               <div className="flex gap-2">
                 <span className="font-semibold">Age:</span>
-                <span className="text-gray-500 font-medium">24</span>
+                <span className="text-gray-500 font-medium">25</span>
               </div>
             </div>
             <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-sm:text-xs max-lg:gap-2">
@@ -49,10 +49,10 @@ function AboutMe() {
                 <span className="font-semibold">Email:</span>
                 <a
                   onClick={openGmail}
-                  href="mailto:srinidhi.s131@gmail.com"
+                  href="mailto:srinidhi.shankar.jain@outlook.com"
                   className="text-blue-500 cursor-pointer underline font-medium"
                 >
-                  srinidhi.s131@gmail.com
+                  srinidhi.shankar.jain@outlook.com
                 </a>
               </div>
               <div className="flex gap-2">

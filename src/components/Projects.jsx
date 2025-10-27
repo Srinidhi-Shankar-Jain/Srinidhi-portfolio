@@ -50,9 +50,33 @@ function Projects() {
             </li>
           </ol>
         </div>
+
+        <div className="border border-b-gray-300 p-2 my-1 border-x-0 border-t-0 max-lg:p-0"></div>
+
+        {/* Third Project */}
+        <div className="flex flex-col gap-2 justify-between mt-4 max-lg:mt-2">
+          <div className="text-2xl font-semibold mb-1 text-left underline max-lg:text-base max-sm:text-sm max-lg:flex-col">
+            Dosing Machine PLC Project
+          </div>
+          <ol className="list-none text-lg font-normal list-inside max-lg:text-sm max-sm:text-xs">
+            <li>
+              <strong>Objective:</strong> To develop a PLC-controlled dosing machine with interactive HMI visualization, demonstrating material handling, mixing operations, and motor control.
+            </li>
+            <li className="mt-1">
+              <strong>Key Contributions:</strong>
+              <ul className="list-disc text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs">
+                <li>Programmed control logic using LD, FBD, and CFC in RSLogix 500 emulator.</li>
+                <li>Created interactive HMI with animations for silos, spiral conveyors, mixers, and motor status indicators.</li>
+                <li>Linked variables to control start/stop operations, motor states, and material levels for real-time visualization.</li>
+                <li>Implemented FSM and trigger-based sequencing for accurate dosing and process flow.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
   );
 }
 
 export default Projects;
+

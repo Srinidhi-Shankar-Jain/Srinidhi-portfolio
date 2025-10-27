@@ -11,23 +11,21 @@ function Skills() {
         <div className="w-full flex flex-col gap-2 text-lg font-normal justify-between mt-12 max-lg:mt-4 max-sm:text-xs max-lg:text-sm max-lg:flex-col">
           <ul className="list-disc list-inside">
             <li>
-              <strong>Mechanical & Mechatronics Engineering:</strong> CAD (Fusion 360, SolidWorks), MATLAB, Motion Systems, Sensor Integration, Pneumatics & Actuators.
+              <strong>Mechanical & Mechatronics Engineering:</strong>CAD (Fusion 360, SolidWorks), MATLAB.
             </li>
             <li className="mt-2">
-              <strong>Embedded Systems & Electronics:</strong> Arduino, Raspberry Pi, STM32 (ARM Cortex), BTT Octopus, Atmega328p, PCB Soldering & Debugging.
+              <strong>Embedded Systems & Electronics:</strong> Arduino, Raspberry Pi, STM32 (ARM Cortex), BTT Octopus, Atmega328p.
             
             </li>
             <li className="mt-2">
-              <strong>Industrial Automation & Controls:</strong> TwinCAT-Software Development, Siemens SINUMERIK, PROFIBUS/PROFINET, Basics of PLC Programming.
+              <strong>Industrial Automation: </strong> PLC Programming (LD, FBD, CFC), Codesys, RSLogix 500 (Emulator), RSLinx.
             </li>
             <li className="mt-2">
               <strong>Programming & Scripting:</strong> Python, C++, Java
             </li>
+          
             <li className="mt-2">
-              <strong>Language Proficiency:</strong> English (Native Speaker C1), German (Working Proficiency A2)
-            </li>
-            <li className="mt-2">
-              <strong>Other Softwares:</strong> Microsoft Office Suite (Word, Excel, PowerPoint, Outlook), Zoho Books (Inventory, Marketplace Integration), Bambu Studio Software, Asana (Project management).
+              <strong>Other Softwares:</strong> Microsoft Office Suite (Word, Excel, PowerPoint, Outlook), Bambu Studio Software, Asana.
             </li>
           </ul>
         </div>

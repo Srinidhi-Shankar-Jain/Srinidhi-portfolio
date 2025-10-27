@@ -7,7 +7,7 @@ function Footer() {
   };
 
   const openGmail = () => {
-    const emailAddress = "srinidhi.s131@gmail.com";
+    const emailAddress = "srinidhi.shankar.jain@outlook.com";
     const mailtoLink = `mailto:${emailAddress}`;
     window.open(mailtoLink, "_blank");
   };

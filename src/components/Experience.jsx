@@ -15,7 +15,7 @@ function Experience() {
               <span>September 2024 - February 2025</span>
             </div>
             <span className="w-full text-blue-700 font-semibold text-base max-lg:text-xs">
-              Mechatronics & Software Engineering Intern
+              Mechatronics Engineering Intern
             </span>
             <div className="w-full">
               <ul
@@ -23,16 +23,16 @@ function Experience() {
                 className="text-lg font-normal text-gray-950 flex flex-col gap-2 mt-0 max-lg:text-sm max-sm:text-xs"
               >
                 <li>
-                  {`Revo Foods Gmbh is a plant based seafoods producing company that uses advanced 3D food printing technology to produce vegan alternatives.`}
+                  {`Design and 3D printing of a housing, as well as development of a motor test station for simultaneous testing of stepper and servo motors.`}
                 </li>
                 <li>
-                  {`Troubleshot and optimized 3D printer control systems using ARM embedded systems, integrating stepper motors, T6 servo motors, drivers and sensors.`}
+                  {`Conducted research on Siemens Sinumerik and other automation systems; created schematic diagrams with Draw.io to support system upgrades.`}
                 </li>
                 <li>
-                  {`Designed 3D-printed case using Fusion 360, Bambu studio and developed a motor test station for simultaneous stepper and servo motor inspection.`}
+                  {`Developed a virtual factory environment using Factory I/O to test PLC code and validate conveyor and machine operations.`}
                 </li>
                 <li>
-                  {`Comprehensive research and review of actuators which are Profibus and Profinet compatible and further research on safety standards and sustainability of the components.Conducted research on Siemens Sinumerik and other automation systems, drawing a schematic diagram using Draw.io to support system upgrades and enhance production efficiency.`}
+                  {`Researched and evaluated actuators compatible with Profibus and Profinet; analyzed safety standards and sustainability of components.`}
                 </li>
                 <li>
                   {`Collaborated with the R&D team to select and integrate food-safe materials and electronics, ensuring compliance with food safety standards while maintaining a sustainable production model.`}
