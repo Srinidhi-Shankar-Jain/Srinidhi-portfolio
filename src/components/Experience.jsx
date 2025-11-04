@@ -29,9 +29,6 @@ function Experience() {
                   {`Conducted research on Siemens Sinumerik and other automation systems; created schematic diagrams with Draw.io to support system upgrades.`}
                 </li>
                 <li>
-                  {`Developed a virtual factory environment using Factory I/O to test PLC code and validate conveyor and machine operations.`}
-                </li>
-                <li>
                   {`Researched and evaluated actuators compatible with Profibus and Profinet; analyzed safety standards and sustainability of components.`}
                 </li>
                 <li>
