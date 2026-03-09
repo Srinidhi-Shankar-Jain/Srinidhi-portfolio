@@ -20,10 +20,10 @@ function Sidebar() {
   };
 
   const downloadResume = () => {
-    const fileUrl = "/Srinidhi-Shankar-Jain-CV.pdf";
+    const fileUrl = "/Srinidhi Shankar Jain -Lebenslauff.pdf";
     const a = document.createElement("a");
     a.href = fileUrl;
-    a.download = "Srinidhi-Shankar-Jain-CV.pdf";
+    a.download = "Srinidhi Shankar Jain -Lebenslauff.pdf";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

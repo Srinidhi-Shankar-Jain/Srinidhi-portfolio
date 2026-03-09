@@ -1,9 +1,9 @@
 function AboutMe() {
   const downloadResume = () => {
-    const fileUrl = "/Srinidhi-Shankar-Jain-CV.pdf";
+    const fileUrl = "/Srinidhi Shankar Jain -Lebenslauff.pdf";
     const a = document.createElement("a");
     a.href = fileUrl;
-    a.download = "Srinidhi-Shankar-Jain-CV.pdf";
+    a.download = "Srinidhi Shankar Jain -Lebenslauff.pdf";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -40,8 +40,8 @@ function AboutMe() {
                 </span>
               </div>
               <div className="flex gap-2">
-                <span className="font-semibold">Age:</span>
-                <span className="text-gray-500 font-medium">25</span>
+                <span className="font-semibold">Phone Number:</span>
+                <span className="text-gray-500 font-medium">+49 15510597586</span>
               </div>
             </div>
             <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-sm:text-xs max-lg:gap-2">
@@ -54,12 +54,6 @@ function AboutMe() {
                 >
                   srinidhi.shankar.jain@outlook.com
                 </a>
-              </div>
-              <div className="flex gap-2">
-                <span className="font-semibold">Place:</span>
-                <span className="text-gray-500 font-medium">
-                  Berlin, Germany
-                </span>
               </div>
             </div>
           </div>
