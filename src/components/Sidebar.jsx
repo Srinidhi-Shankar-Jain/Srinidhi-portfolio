@@ -1,16 +1,62 @@
-import { BiHome } from "react-icons/bi";
+
+import { useState } from "react";
+import { Button } from "react-scroll";
+
+import { BiHome, BiLogoGmail } from "react-icons/bi";
 import { PiUserCircleDuotone } from "react-icons/pi";
 import { BsSpeedometer2 } from "react-icons/bs";
-import { TbSettingsBolt } from "react-icons/tb";
 import { IoMdDownload } from "react-icons/io";
-import { BiSolidContact } from "react-icons/bi";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
-import { BiLogoGmail } from "react-icons/bi";
+
+import {
+  FaProjectDiagram,
+  FaAward,
+  FaGraduationCap,
+} from "react-icons/fa";
+
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+
 import "/src/App.css";
-import { Button } from "react-scroll";
-import { useState } from "react";
-import { FaProjectDiagram } from "react-icons/fa";
+
+// Sidebar Navigation
+const navigationLinks = [
+  {
+    to: "home",
+    label: "Home",
+    Icon: BiHome,
+    offset: -100,
+  },
+  {
+    to: "about",
+    label: "About",
+    Icon: PiUserCircleDuotone,
+    offset: -100,
+  },
+
+  {
+    to: "education",
+    label: "Education",
+    Icon: FaGraduationCap,
+    offset: -50,
+  },
+  {
+    to: "work-experience",
+    label: "Work Experience",
+    Icon: BsSpeedometer2,
+    offset: -50,
+  },
+  {
+    to: "projects",
+    label: "Projects",
+    Icon: FaProjectDiagram,
+    offset: -50,
+  },
+  {
+    to: "awards",
+    label: "Awards",
+    Icon: FaAward,
+    offset: -50,
+  },
+];
 
 function Sidebar() {
   const [activeLink, setActiveLink] = useState(null);
@@ -19,166 +65,146 @@ function Sidebar() {
     setActiveLink(to);
   };
 
+  // Resume Download
   const downloadResume = () => {
-    const fileUrl = "/Srinidhi Shankar Jain -Lebenslauff.pdf";
+    const fileUrl = "/Srinidhi Shankar Jain - CV.pdf";
+
     const a = document.createElement("a");
     a.href = fileUrl;
-    a.download = "Srinidhi Shankar Jain -Lebenslauff.pdf";
+    a.download = "Srinidhi Shankar Jain - CV.pdf";
+
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
   };
 
-  const openLinkedIn = () => {
-  window.open("https://www.linkedin.com/in/srinidhi-shankarjain/", "_blank");
-};
-
-
-
-
-  const openGmail = () => {
-    const emailAddress = "srinidhi.s131@gmail.com";
-    const mailtoLink = `mailto:${emailAddress}`;
-    window.open(mailtoLink, "_blank");
-  };
-
-  const openGithub = () => {
-    window.open("https://github.com/Srinidhi-shankar-jain", "_blank");
-  };
-
   return (
-    <>
-      <div className="w-full h-full">
-        <div className="p-5 flex justify-center flex-col items-center bg-map-image">
+    <div className="w-full h-full overflow-y-auto">
+
+      {/* Profile Section */}
+      <div className="p-5 flex flex-col justify-center items-center bg-map-image bg-no-repeat bg-cover">
+
+        {/* Profile Picture */}
+        <div className="w-36 h-36 rounded-full overflow-hidden flex-shrink-0 border-2 border-gray-200 shadow-md">
           <img
-            src="/AboutMe_profile.jpg"
-            className="w-36 h-36 rounded-full object-cover"
+            src="/images/Pictures/AboutMe_profile.jpg"
+            alt="Srinidhi Shankar Jain"
+            className="w-full h-full object-cover object-center"
+            onError={(event) => {
+              const fallback = "/AboutMe_profile.jpg";
+
+              if (!event.currentTarget.src.endsWith(fallback)) {
+                event.currentTarget.src = fallback;
+              }
+            }}
           />
-          <span className="text-xl font-serif font-semibold text-600 pt-5">
-            Srinidhi Shankar Jain
-          </span>
-          <div>
-            <h1 className="animate-typing overflow-hidden pt-3 whitespace-nowrap border-r-4 border-r-black pr-0 text-sm text-gray-500 font-medium">
-              {"Mechatronics Engineer..."}
-            </h1>
-          </div>
         </div>
-        <Button
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          onSetActive={handleSetActive}
-          className={`${activeLink === "home" ? "active" : ""} w-full flex p-4 pl-5 px-8 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
-        >
-          <BiHome className="text-xl text-gray-600 font-extralight" />
-          <span>Home</span>
-        </Button>
-        <Button
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          onSetActive={handleSetActive}
-          className={`${activeLink === "about" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
-        >
-          <PiUserCircleDuotone className="text-xl text-gray-600 font-extralight" />
-          <span>About</span>
-        </Button>
-        <Button
-          to="skills"
-          spy={true}
-          smooth={true}
-          offset={-75}
-          duration={500}
-          onSetActive={handleSetActive}
-          className={`${activeLink === "skills" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
-        >
-          <TbSettingsBolt className="text-xl text-gray-600 font-extralight" />
-          <span>Skills</span>
-        </Button>
-        <Button
-          to="work-experience"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          onSetActive={handleSetActive}
-          className={`${activeLink === "work-experience" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
-        >
-          <BsSpeedometer2 className="text-xl text-gray-600 font-extralight" />
-          <span>Work Experience</span>
-        </Button>
-        <Button
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          onSetActive={handleSetActive}
-          className={`${activeLink === "projects" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
-        >
-          <FaProjectDiagram className="text-xl text-gray-600 font-extralight" />
-          <span>Projects</span>
-        </Button>
-        <Button
-          onClick={downloadResume}
-          className="flex p-4 pl-5 px-8 w-full border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium"
-        >
-          <IoMdDownload className="text-xl text-gray-600 font-extralight" />
-          <span>Download Resume</span>
-        </Button>
-        <Button
-          to="contacts"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          onSetActive={handleSetActive}
-          className={`${activeLink === "contacts" ? "active" : ""} w-full flex p-4 pl-5 px-8 border-t-0 items-center gap-4 text-sm border text-gray-900 border-x-0 hover:text-blue-700 hover:bg-gray-100 cursor-pointer font-medium`}
-        >
-          <BiSolidContact className="text-xl text-gray-600 font-extralight" />
-          <span>Contact</span>
-        </Button>
-        <div className="flex items-center justify-center flex-col gap-6 pt-10">
-          <div className="flex gap-3 text-xl cursor-pointer">
-            <AiFillLinkedin
-              tabIndex={0}
-              onClick={openLinkedIn}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" || event.keyCode === 13) {
-                  openLinkedIn();
-                }
-              }}
-            />
-            <AiFillGithub
-              tabIndex={0}
-              onClick={openGithub}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" || event.keyCode === 13) {
-                  openGithub();
-                }
-              }}
-            
-            />
-            <BiLogoGmail
-              tabIndex={0}
-              onClick={openGmail}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" || event.keyCode === 13) {
-                  openGmail();
-                }
-              }}
-            />
-          </div>
-          <span className="text-xs font-serif text-gray-600">
-            Copyright © {new Date().getFullYear()} Srinidhi S
-          </span>
+
+        {/* Name */}
+        <span className="text-xl font-serif font-semibold text-gray-900 pt-5 text-center">
+          Srinidhi Shankar Jain
+        </span>
+
+        {/* Professional Title */}
+        <div className="max-w-full">
+          <h1 className="animate-typing overflow-hidden pt-3 whitespace-nowrap border-r-4 border-r-black pr-0 text-sm text-gray-500 font-medium">
+            Mechatronics Engineer...
+          </h1>
         </div>
       </div>
-    </>
+
+      {/* Navigation Links */}
+      <nav aria-label="Portfolio navigation">
+        {navigationLinks.map(
+          ({ to, label, Icon, offset }, index) => (
+            <Button
+              key={to}
+              to={to}
+              spy={true}
+              smooth={true}
+              offset={offset}
+              duration={500}
+              onSetActive={handleSetActive}
+              className={`
+                ${activeLink === to ? "active" : ""}
+                ${index !== 0 ? "border-t-0" : ""}
+                w-full flex p-4 pl-5 px-8
+                items-center gap-4 text-sm
+                border border-x-0 text-gray-900
+                hover:text-blue-700 hover:bg-gray-100
+                cursor-pointer font-medium
+                transition-colors duration-200
+              `}
+            >
+              <Icon className="text-xl text-gray-600 font-extralight flex-shrink-0" />
+              <span>{label}</span>
+            </Button>
+          )
+        )}
+      </nav>
+
+      {/* Download Resume */}
+      <button
+        type="button"
+        onClick={downloadResume}
+        className="
+          flex p-4 pl-5 px-8 w-full
+          border border-t-0 border-x-0
+          items-center gap-4 text-sm text-gray-900
+          hover:text-blue-700 hover:bg-gray-100
+          cursor-pointer font-medium
+          transition-colors duration-200
+        "
+      >
+        <IoMdDownload className="text-xl text-gray-600 flex-shrink-0" />
+        <span>Download Resume</span>
+      </button>
+
+      {/* Social Media Section */}
+      <div className="flex items-center justify-center flex-col gap-6 pt-10 pb-6">
+
+        <div className="flex items-center justify-center gap-4 text-xl">
+
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/srinidhi-shankarjain/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+            className="hover:text-blue-700 transition-colors"
+          >
+            <AiFillLinkedin />
+          </a>
+
+          {/* GitHub */}
+          <a
+            href="https://github.com/Srinidhi-shankar-jain"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+            className="hover:text-blue-700 transition-colors"
+          >
+            <AiFillGithub />
+          </a>
+
+          {/* Gmail */}
+          <a
+            href="mailto:srinidhi.s131@gmail.com"
+            aria-label="Send Email"
+            className="hover:text-red-600 transition-colors"
+          >
+            <BiLogoGmail />
+          </a>
+
+        </div>
+
+        {/* Copyright */}
+        <span className="text-xs font-serif text-gray-600 text-center">
+          Copyright © {new Date().getFullYear()} Srinidhi S
+        </span>
+
+      </div>
+    </div>
   );
 }
 
