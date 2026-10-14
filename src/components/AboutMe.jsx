@@ -1,69 +1,143 @@
-function AboutMe() {
-  const downloadResume = () => {
-    const fileUrl = "/Srinidhi Shankar Jain -Lebenslauff.pdf";
-    const a = document.createElement("a");
-    a.href = fileUrl;
-    a.download = "Srinidhi Shankar Jain -Lebenslauff.pdf";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  };
 
-  const openGmail = () => {
-    const emailAddress = "srinidhi.s131@gmail.com";
-    const mailtoLink = `mailto:${emailAddress}`;
-    window.open(mailtoLink, "_blank");
+function AboutMe() {
+  // Contact Email
+  const emailAddress = "srinidhi.s131@gmail.com";
+
+  // Download Updated CV
+  const downloadResume = () => {
+    const fileUrl = "/Srinidhi Shankar Jain - CV.pdf";
+
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "Srinidhi Shankar Jain - CV.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
-    <>
+    <section
+      id="about"
+      className="
+        w-full
+        flex
+        flex-col
+        items-center
+        justify-center
+        px-6
+        py-16
+        sm:px-10
+        lg:py-24
+      "
+    >
+      {/* Centered About Me Content */}
       <div
-        id="about"
-        className="p-10 h-full m-auto mb-0 w-4/5 flex gap-12 items-center justify-center my-20 max-lg:m-0 max-lg:gap-0.5 max-lg:w-full max-lg:p-0 max-lg:flex-col max-lg:mt-5"
+        className="
+          w-full
+          max-w-3xl
+          mx-auto
+          flex
+          flex-col
+          items-center
+          text-center
+          gap-6
+        "
       >
-        <div className="w-1/2 h-full m-auto">
-          <img src="/Sri_profile.jpg" />
-        </div>
-        <div className="w-1/2 max-lg:w-5/6 m-auto h-full flex flex-col gap-4 max-sm:w-full max-lg:gap-1 max-lg:px-4 max-lg:text-center">
-          <span className="text-4xl font-bold max-sm:text-xl max-lg:text-2xl max-lg:mt-5">
-            About Me
-          </span>
-          <span className="text-xl font-medium text-gray-500 max-sm:text-sm">{`I'm a Mechatronics Engineering Graduate`}</span>
-          <span className="text-sm font-normal text-gray-500 max-lg:text-gray-700 leading-6 max-sm:text-xs max-lg:text-justify">{`Mechatronics engineer with practical experience in control systems and automation. Familiar with PLC programming and passionate about integrating mechanical, electrical, and software systems. Currently learning AI for industrial automation and upskilling in automation programming tools.`}</span>
-          <div className="border border-b-gray-300 p-2 border-x-0 border-t-0"></div>
-          <div className="flex justify-between">
-            <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-sm:text-xs max-lg:gap-2">
-              <div className="flex gap-2">
-                <span className="font-semibold">Name:</span>
-                <span className="text-gray-500 whitespace-nowrap font-medium">
-                  Srinidhi Shankar Jain
-                </span>
-              </div>
-            </div>
-            <div className="text-sm flex flex-col m-3 max-lg:mx-0 gap-4 max-sm:text-xs max-lg:gap-2">
-              <div className="flex gap-2">
-                <span className="font-semibold">Email:</span>
-                <a
-                  onClick={openGmail}
-                  href="mailto:srinidhi.shankar.jain@outlook.com"
-                  className="text-blue-500 cursor-pointer underline font-medium"
-                >
-                  srinidhi.shankar.jain@outlook.com
-                </a>
-              </div>
-            </div>
+        {/* Section Heading */}
+        <h2 className="text-4xl font-bold max-lg:text-2xl max-sm:text-xl">
+          About Me
+        </h2>
+
+        {/* Professional Description */}
+        <p
+          className="
+            text-base
+            font-normal
+            text-gray-600
+            leading-8
+            max-lg:text-sm
+            max-sm:text-xs
+            max-sm:leading-6
+          "
+        >
+          Mechatronics Engineer with hands-on experience in industrial automation, PLC programming, robotics, machine vision, and digital-twin development. Experienced with CODESYS, IEC 61131-3 Structured Text, Python, OpenCV, TCP/IP communication, and vision-guided robotic systems. Skilled in integrating mechanical, electrical, control, and software components into complete automation solutions, with a strong interest in robotics, intelligent automation, and AI-based industrial applications.
+        </p>
+
+        {/* Divider */}
+        <div className="w-full border-b border-gray-300" />
+
+        {/* Personal Information */}
+        <div
+          className="
+            w-full
+            flex
+            flex-wrap
+            items-center
+            justify-center
+            gap-x-12
+            gap-y-4
+            text-sm
+            max-sm:text-xs
+          "
+        >
+          {/* Name */}
+          <div className="flex flex-wrap justify-center gap-2">
+            <span className="font-semibold">
+              Name:
+            </span>
+
+            <span className="text-gray-600 font-medium">
+              Srinidhi Shankar Jain
+            </span>
           </div>
-          <button
-            onClick={downloadResume}
-            className="bg-blue-700 p-2.5 mt-2 px-5 active:bg-blue-500 text-white rounded-full font-medium w-max max-sm:text-xs max-sm:px-3"
-          >
-            Download Resume
-          </button>
+
+          {/* Email */}
+          <div className="flex flex-wrap justify-center gap-2">
+            <span className="font-semibold">
+              Email:
+            </span>
+
+            <a
+              href={`mailto:${emailAddress}`}
+              className="
+                text-blue-600
+                hover:text-blue-800
+                cursor-pointer
+                underline
+                font-medium
+                break-all
+              "
+            >
+              {emailAddress}
+            </a>
+          </div>
         </div>
+
+        {/* Download Resume Button */}
+        <button
+          type="button"
+          onClick={downloadResume}
+          className="
+            bg-blue-700
+            hover:bg-blue-800
+            active:bg-blue-500
+            text-white
+            rounded-full
+            px-7
+            py-3
+            mt-2
+            font-medium
+            transition-colors
+            duration-200
+            max-sm:text-xs
+          "
+        >
+          Download Resume
+        </button>
       </div>
-    </>
+    </section>
   );
 }
 
 export default AboutMe;
-
