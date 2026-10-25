@@ -3,7 +3,7 @@ import PhotoGallery from "./PhotoGallery";
 
 const experiences = [
   {
-    role: "Master Thesis Student",
+    role: "Master Thesis Student - Full Time",
     company: "Pilz GmbH & Co. KG and Hochschule Schmalkalden",
     location: "Schmalkalden, Germany",
     duration: "Feb 2026 - Sep 2026",
@@ -44,9 +44,8 @@ const experiences = [
       },
     ],
 
-    // Master's Thesis YouTube Videos
+    // Master's Thesis YouTube Video
     videos: [
-    
       {
         title: "Pilz Master's Thesis - Complete System Demonstration",
         url: "https://www.youtube.com/watch?v=mTEB_yVtSZw",
@@ -55,7 +54,7 @@ const experiences = [
   },
 
   {
-    role: "Mechatronics & Software Intern",
+    role: "Mechatronics Intern - Full Time",
     company: "Revo Foods GmbH",
     location: "Vienna, Austria",
     duration: "Sep 2024 - Mar 2025",
@@ -88,7 +87,24 @@ const experiences = [
   },
 
   {
-    role: "Operations Engineer",
+    role: "Student Assistant – Part Time",
+    company: "International Office — Hochschule Schmalkalden",
+    location: "Schmalkalden, Germany",
+    duration: "Jan 2024 - Aug 2024",
+
+    description: [
+      "Reviewed application documents for English-taught master's degree programs, verifying completeness and compliance with application deadlines.",
+
+      "Created and maintained Excel spreadsheets containing applicant data to support application processing and administrative management.",
+    ],
+
+    // No photographs or videos for this position
+    photos: [],
+    videos: [],
+  },
+
+  {
+    role: "Operations Engineer - Full Time",
     company: "Pro-Spec Performance Parts",
     location: "Bengaluru, India",
     duration: "Jan 2023 - Sep 2023",
