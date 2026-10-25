@@ -5,11 +5,11 @@ function AboutMe() {
 
   // Download Updated CV
   const downloadResume = () => {
-    const fileUrl = "/Srinidhi Shankar Jain - CV.pdf";
+    const fileUrl = "/Srinidhi Shankar Jain - Lebenslauf.pdf";
 
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.download = "Srinidhi Shankar Jain - CV.pdf";
+    link.download = "Srinidhi Shankar Jain - Lebenslauf.pdf";
 
     document.body.appendChild(link);
     link.click();
