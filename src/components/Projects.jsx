@@ -46,6 +46,25 @@ const projects = [
     videos: [],
   },
 
+  // New Siemens TIA Portal Project
+  {
+    title: "Conveyor Sorting System with TIA Portal",
+
+    objective:
+      "To develop and validate a virtual conveyor sorting and buffering system using modular PLC programming, automated product tracking, sorting logic, and HMI-based monitoring in Siemens TIA Portal.",
+
+    implementations: [
+      "Developed modular PLC software using SCL and LAD/FBD, reusable function blocks, UDTs, and state machines for conveyor control, product tracking, and sorting.",
+
+      "Designed a WinCC HMI with automatic/manual modes, production monitoring, alarm management, and equipment diagnostics.",
+
+      "Validated control logic using S7-PLCSIM and documented tests for normal operation, conveyor jams, sensor failures, and controlled recovery.",
+    ],
+
+    photos: [],
+    videos: [],
+  },
+
   {
     title: "Vision-Guided Delta Robot System",
     objective:
