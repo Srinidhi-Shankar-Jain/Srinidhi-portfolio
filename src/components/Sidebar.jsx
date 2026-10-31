@@ -67,11 +67,11 @@ function Sidebar() {
 
   // Resume Download
   const downloadResume = () => {
-    const fileUrl = "/Srinidhi Shankar Jain - Lebenslauf.pdf";
+    const fileUrl = "/Srinidhi Shankar Jain_Lebenslauf.pdf";
 
     const a = document.createElement("a");
     a.href = fileUrl;
-    a.download = "Srinidhi Shankar Jain - Lebenslauf.pdf";
+    a.download = "Srinidhi Shankar Jain_Lebenslauf.pdf";
 
     document.body.appendChild(a);
     a.click();
